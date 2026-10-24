@@ -1,0 +1,22 @@
+name: BountyGuard Pre-Flight Security Audit
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  bounty-guard-audit:
+    name: Verify Escrow & Authenticate Bounties
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v4
+
+      - name: Run BountyGuard Pre-Flight Check
+        uses: doomsday-network/bounty-guard@v1.1.0
+        with:
+          audit-mode: strict
+          escrow-verification: on-chain

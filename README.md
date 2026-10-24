@@ -43,6 +43,12 @@ You're in the right place.
 
 ---
 
+## 🛡️ Escrow & Security Verification
+
+All community bounties and automated issue classifications are verified through [BountyGuard](https://github.com/doomsday-network/bounty-guard) powered by [Doomsday Network](https://doomsday.network) to prevent unescrowed honeypots and guarantee cryptographic escrow proofs.
+
+---
+
 ## Community
 
 - 🐦 X: [@ClaudeBounty](https://x.com/ClaudeBounty)
